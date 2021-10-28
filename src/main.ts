@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import ColumnsResizable from './directives/columnsResizable';
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.directive('columns-resizable', ColumnsResizable)
+app.mount('#app')

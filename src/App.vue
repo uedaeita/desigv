@@ -7,6 +7,32 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <table border="1" class="table" v-columns-resizable>
+    <thead>
+      <tr>
+        <th width="50%">name</th>
+        <th width="25%">age</th>
+        <th width="25%">gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>20</td>
+        <td>male</td>
+      </tr>
+      <tr>
+        <td>Emma</td>
+        <td>18</td>
+        <td>female</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>21</td>
+        <td>male</td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <style>
